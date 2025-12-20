@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { QueryProvider } from "@/components/providers/QueryProvider";
+import { MSWProvider } from "@/components/providers/MSWProvider";
 import AnalyticsTools from "@/components/common/AnalyticsTools";
 
 export const metadata: Metadata = {
@@ -67,7 +68,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <AnalyticsTools />
-        <QueryProvider>{children}</QueryProvider>
+        <MSWProvider>
+          <QueryProvider>{children}</QueryProvider>
+        </MSWProvider>
       </body>
     </html>
   );
