@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
 
       "ssl.pstatic.net",
       "phinf.pstatic.net",
+
+      "via.placeholder.com", // 모킹 데이터용 플레이스홀더 이미지
     ],
   },
 };

@@ -75,9 +75,7 @@ export const authHandlers = [
 // src/mocks/handlers/index.ts
 import { authHandlers } from "./auth.handlers";
 
-export const handlers = [
-  ...authHandlers,
-];
+export const handlers = [...authHandlers];
 ```
 
 ## 사용 방법
@@ -91,4 +89,3 @@ export const handlers = [
 - 모킹은 개발 환경에서만 사용하세요.
 - 프로덕션 빌드에는 모킹이 포함되지 않습니다.
 - 모킹되지 않은 요청은 그대로 실제 API로 전달됩니다 (`onUnhandledRequest: "bypass"`).
-

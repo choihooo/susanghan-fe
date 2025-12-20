@@ -42,7 +42,8 @@ export const mockReportList = [
 ];
 
 export const mockDcaBriefEvaluation = {
-  interpretation: "브리프를 잘 이해하고 있으며, 타겟 고객에 대한 인사이트가 명확합니다.",
+  interpretation:
+    "브리프를 잘 이해하고 있으며, 타겟 고객에 대한 인사이트가 명확합니다.",
   consistency: "브랜드 아이덴티티와 일관성 있게 표현되었습니다.",
   weakness: "미디어 선택의 근거가 다소 부족합니다.",
 };
@@ -79,14 +80,16 @@ export const mockStrengths = {
   code: "TARGET_FITNESS",
   label: "타겟 적합성",
   score: 95,
-  description: "타겟 고객에 대한 이해도가 매우 높고, 그들의 니즈를 정확히 파악했습니다.",
+  description:
+    "타겟 고객에 대한 이해도가 매우 높고, 그들의 니즈를 정확히 파악했습니다.",
 };
 
 export const mockWeaknesses = {
   code: "MEDIA_SELECTION",
   label: "미디어 선택",
   score: 75,
-  description: "미디어 선택의 근거가 다소 부족하며, 대안적 미디어 채널에 대한 고려가 필요합니다.",
+  description:
+    "미디어 선택의 근거가 다소 부족하며, 대안적 미디어 채널에 대한 고려가 필요합니다.",
 };
 
 export const mockSummary = {
@@ -96,4 +99,3 @@ export const mockSummary = {
 };
 
 export const mockShareCode = "ABC123";
-

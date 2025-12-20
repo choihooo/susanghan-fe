@@ -618,4 +618,3 @@ export const reportHandlers = [
     });
   }),
 ];
-
