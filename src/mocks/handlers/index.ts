@@ -1,6 +1,6 @@
 import { authHandlers } from "./auth.handlers";
+import { userHandlers } from "./user.handlers";
 // TODO: 각 도메인별 핸들러를 import하여 통합
-// import { userHandlers } from "./user.handlers";
 // import { reportHandlers } from "./report.handlers";
 // import { applyHandlers } from "./apply.handlers";
 
@@ -9,9 +9,8 @@ import { authHandlers } from "./auth.handlers";
  */
 export const handlers = [
   ...authHandlers,
+  ...userHandlers,
   // TODO: 각 도메인별 핸들러 추가
-  // ...userHandlers,
   // ...reportHandlers,
   // ...applyHandlers,
 ];
-

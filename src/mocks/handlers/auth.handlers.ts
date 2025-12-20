@@ -68,7 +68,10 @@ export const authHandlers = [
     };
 
     // refreshToken이 없거나 유효하지 않으면 에러 반환
-    if (!requestRefreshToken || requestRefreshToken !== mockTokens.refreshToken) {
+    if (
+      !requestRefreshToken ||
+      requestRefreshToken !== mockTokens.refreshToken
+    ) {
       await delay(MOCK_DELAY);
       return HttpResponse.json(
         {
@@ -118,4 +121,3 @@ export const authHandlers = [
     });
   }),
 ];
-
