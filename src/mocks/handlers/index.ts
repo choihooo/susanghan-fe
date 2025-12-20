@@ -1,7 +1,5 @@
-import { http, HttpResponse } from "msw";
-
+import { authHandlers } from "./auth.handlers";
 // TODO: 각 도메인별 핸들러를 import하여 통합
-// import { authHandlers } from "./auth.handlers";
 // import { userHandlers } from "./user.handlers";
 // import { reportHandlers } from "./report.handlers";
 // import { applyHandlers } from "./apply.handlers";
@@ -10,8 +8,8 @@ import { http, HttpResponse } from "msw";
  * 모든 API 핸들러를 통합하여 export
  */
 export const handlers = [
+  ...authHandlers,
   // TODO: 각 도메인별 핸들러 추가
-  // ...authHandlers,
   // ...userHandlers,
   // ...reportHandlers,
   // ...applyHandlers,

@@ -9,4 +9,3 @@ const useMock = process.env.NEXT_PUBLIC_USE_MOCK_API === "true";
 export const shouldEnableMocking = () => {
   return isDevelopment && useMock;
 };
-
