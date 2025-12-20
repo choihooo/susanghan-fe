@@ -36,7 +36,7 @@ export const applyHandlers = [
     try {
       // FormData 파싱
       const formData = await request.formData();
-      
+
       // 필수 필드 검증
       const title = formData.get("title") as string;
       const number = formData.get("number") as string;
@@ -135,7 +135,7 @@ export const applyHandlers = [
     try {
       // FormData 파싱
       const formData = await request.formData();
-      
+
       // 필수 필드 검증
       const title = formData.get("title") as string;
       const planFile = formData.get("planFile") as File | null;
@@ -202,4 +202,3 @@ export const applyHandlers = [
     }
   }),
 ];
-
